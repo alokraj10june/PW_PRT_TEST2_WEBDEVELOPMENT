@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" >
+        function validate(){
+            var name=document.getElementById("user");
+            var emails=document.getElementById("emale");
+            var pnumber=document.getElementById('num');
+            var pasword=document.getElementById("pwd");
+            var age=document.getElementById("ag");
+
+            if(name.value=="" ||emails.value=="" || pnumber.value=="" ||pasword.value=="" ||
+             age.value==""){
+                alert("No Blank value is alloed");
+             }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label>Name: <input id="user" type="text" placeholder="Enter Name"></label> <br>
+        <label>Email: <input id="emale" type='email' placeholder="Enter Email"></label><br>
+        <label>PhoneNumber: <input id="num" type="number" placeholder="Enter PhoneNumber"></label> <br>
+        <label>Password: <input id="pwd" type="password" placeholder="Enter Password"></label> <br>
+        <label>Age: <input id="ag" type="number" placeholder="Enter age"></label> <br>
+        <label>Gender: <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            </label><br>
+            <label>Date: <input type="date" ></label> <br>
+        <label>ColorPicker: <input type="color" ></label> 
+        <button onclick="validate()" type="submit">Submit</button>
+
+      
+
+
+
+        
+    </form>
+</body>
+</html>

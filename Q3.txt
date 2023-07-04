@@ -1,0 +1,31 @@
+3. Explain what is execution context in detail with diagram
+ANS-everything in javasript happens inside an execution context.The Execution Context 
+contains the code that's currently running, and everything that aids in its execution. 
+During the Execution Context run-time, the specific code gets parsed by a parser, the 
+variables and functions
+are stored in memory, executable byte-code gets generated, and the code gets executed.
+In execution context there are two parts.first is code part and second is memory part.
+when ever javascript code starts executing than it execute line by line code.in execution context
+of code part it form key value pair;like if code is
+var a=10;
+var b=4;
+function sum(){
+    var c=a+b;
+    return c;
+}
+var c=sum()
+than in code block first form "a=undefine and b=undefine" after that whole function comes 
+in code block like "function sum(){}".and "c=Undefine"
+in memory block code is executed line by line.than it value is assingining line by line.
+"a=10""b:4".
+than again in code block a=10 and b=4; and after code goes to line 12 in code block and
+it see that is function block of code than nothing is going to run because code reun when 
+function is calling.than line 12,13,14,15, nothing hapeen and codes goes to line 16
+that is calling function sum.and it is undefine is code block.it again form Execution context in memory
+block.again forn two block one is code and other is memory block;than again scan javascript
+code and in code part define "c=undefine" and in memory part "c=10+4" comes.and after undefine
+becomes c=14.than 13 line goesexecuted.and in main execution box of code block c becomes "c=14"
+global execution code is take care by call stack.in call stack it places lowest part.
+and sum function come i stack above execution context.it run line by line in function block
+and it comes out from call stack.and only left execution context in call stack.
+call stack maintains the order of execution contexts.

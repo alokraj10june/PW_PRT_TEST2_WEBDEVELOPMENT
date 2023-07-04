@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            gap:10px;
+            
+            grid-template-columns: repeat(3,220px);
+            
+            
+        }
+        .box{
+            height:200px;
+            width:200px;
+            overflow: hidden;
+        }
+        .box1{
+            background-color: black;
+            height:300px;
+            
+        }
+        .box2{
+            background-color: black;
+            height: 300px;
+            
+        }
+        .box3{
+            background-color: black;
+        
+        }
+        .box4{
+            background-color: black;
+            height:330px;
+            width:430px;
+            
+            grid-column-start: 1;
+            grid-column-end: 3;
+            
+        }
+        .box5{
+            background-color: black;
+            position: relative;
+            bottom:90px;
+            
+        }
+        .box6{
+            background-color: black;
+            position:relative;
+            left:460px;
+            bottom:210px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"><img src="https://assets.hongkiat.com/uploads/nature-photography/autumn-poolside.jpg" alt="img1"></div>
+        <div class="box box2"><img src="https://static.toiimg.com/thumb/msid-99552788,width-1280,resizemode-4/99552788.jpg" alt="img2"></div>
+        
+        <div class="box box3"><img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000" alt="img3"></div>
+        <div class="box box4"><img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img4">img4</div>
+        <div class="box box5"><img src="https://www.clubmahindra.com/blog/media/section_images/naturephot-ec32e94608f809e.webp" alt="img5"></div>
+        
+        <div class="box box6"><img src="https://thumbs.dreamstime.com/b/silhouette-fisherman-thailand-style-pak-pra-village-phatthalung-province-thailand-61594589.jpg" alt="img6"></div>
+    </div>
+</body>
+</html>
